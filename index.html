@@ -1,105 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Homework 3- The Psychic Game</title>
+	<title>
+		The Psychic Game
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="assets/javascript/game.js"></script>
 </head>
+
+
+
+<h2>Read my mind, I dare you!</h2>
+
+<div id="header">
+<img src="assets/images/thirdeye.jpg">
+</div>
+<h2>Look into my eye and guess what letter I'm thinking of</h2>
+<h3> *To start, press the letter you think I picked*</h3>
+<div id="gamecontainer">
+
+</div>
+
+
 <body>
 
-<script  type="text/javascript">
-
- // <!-- Set a variable an an array of possible letters to choose from -->
-
- var letters = ("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q"
-    			,"r","s","t","u","v","w","x","y","z");
-
-
-// Set Variables for the wins, loses and guesses left left, starting at 0 ---------> how do I track 10 changes???//
-  
-   var wins = "0"
-   var losses= "0"
-   var guessesleft="9" ------> how do I track the guesseleft? new variable?
-
-// Write a function for the computer to pick one from the array----->how do I test this?????
-
-
-
-
-// Write a function for the computer to pick one from the array
-document.onkeyup = function (event) {
-
-	// Determines which key was pressed
-	var playerGuess = event.key;
-
-	//Determines the computer's Guess fron the letters' array. Record the key/letter the user pressed- make a variable
-	var computersPick = letters[Math.floor(Math.random()*letters.length)];
-
-// 	Compare the previous variable to the one that the computer chose
-	if (computersPic === playersGuess) { 
-
-
-
-
-
-
-
-	}
-// 	Write conditionals:
-// 		if the userguessedletter is not the same as the computerpicked letter add a lose and substract an available chance to guess
-
-// 		else if userguessed letter is athe same as the computerpicked letter add a win and substract a chance
-
-// 	When the user reacher 10 chances reset
- -->
-
-}
-
-
-
-</script>
-
-<h1> The Psychic Game</h1>
-<!-- Put the following text on your page:
-Guess what letter I'm thinking of -->
-	<div> To play, guess what letter I'm thinking of </div>
-
-	<section class="container">
-   
-   	<ul>
-
-   		<li> 
-   			   <!-- 	(# of times the user has guessed the letter correctly) -->
-   			Wins: 
-   		</li>
-   			<li> 
-   			<!-- (# of times the user has failed to guess the letter correctly after exhausting all guesses) -->
-   			Losses: 
-   		</li>
-   		<li>
-   			<!-- (# of guesses left. This will update) -->
-			Guesses Left: 
-   		</li>
-   		<li>
-   			<!-- (the specific letters that the user typed. Display these until the user either wins or loses.) -->
-			Your Guesses So Far: 
-   		</li>
-   		</section>
 </body>
 </html>
- 
-<!-- When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
-   	
-	
-When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).
-	 -->
-	
-
-<!-- 	Pseudo coding:
-
-
-	set an array of possible letters to choose from -->
-
-	
-<!-- 
-	
-
-	
