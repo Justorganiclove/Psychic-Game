@@ -32,15 +32,22 @@ document.onkeyup = function(event) {
            
         }
         reset();
+
+
     } else {
         losses++;
         guessesLeft--;
         alert("Nope, that's not it. Try again.")
         //Can I call this variable in a more simple way?
         computersPick = letters[Math.floor(Math.random() * letters.length)];
-      
         // here for testing purposes:
         console.log("ComputersPick after loss:" + computersPick)
+            if (guessesLeft === 0) {
+                guessesLeft = 10;
+                guessedSoFar=[];
+                losses=0;
+                alert("Too many losses in a row, that is bad juju - Let's start with a clean slate")
+            }
 
 
     };
